@@ -24,5 +24,4 @@ yarn-error.log*
 
 .idea/
 Thumbs.db
-package-lock.json
 

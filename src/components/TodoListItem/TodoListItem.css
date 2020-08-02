@@ -1,0 +1,12 @@
+.button {
+    width: 38px;
+    margin: 0 3px;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.important {
+    color: tomato;
+}

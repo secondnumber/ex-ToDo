@@ -1,5 +1,9 @@
 import React from 'react';
 
-const Header = () => <div>Header</div>;
+const Header = ({ doneCount, todoCount }) => (
+  <div className="col-sm">
+    {todoCount} more todo {doneCount} done
+  </div>
+);
 
 export default Header;

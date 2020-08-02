@@ -3,20 +3,31 @@ import './TodoListItem.css';
 
 export default class TodoListItem extends Component {
   render() {
-    const liStyle = {
-      color: important ? 'tomato' : 'black',
-    };
-    const { label, important = false } = this.props;
+    const { label, important, done, onDelete, onToggleImportant, onToggleDone } = this.props;
+
+    let classNames = '';
+    if (done) {
+      classNames += ' done'
+    }
+    if (important) {
+      classNames += ' important'
+    }
 
     return (
-      <li className="list-group-item todo-list-item" style={liStyle}>
-        {label}
-        <button>
-          <i className="fa fa-exclamation" />
-        </button>
-        <button>
-          <i className="fa fa-trash-o" />
-        </button>
+      <li
+        className="d-flex justify-content-between align-items-center list-group-item"
+      >
+        <span className={`pr-5 ${classNames}`} onClick={onToggleDone}>
+          {label}
+        </span>
+        <span>
+          <button type="button" className="btn btn-outline-success button" onClick={onToggleImportant}>
+            <i className="fa fa-exclamation" />
+          </button>
+          <button type="button" className="btn btn-outline-danger button" onClick={onDelete}>
+            <i className="fa fa-trash-o" />
+          </button>
+        </span>
       </li>
     );
   }

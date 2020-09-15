@@ -1,13 +1,13 @@
-#It's a simple ToDo application
-![](https://res.cloudinary.com/dv4fxot90/image/upload/v1600155605/img/Screenshot_2020-09-15_at_10.38.30_hybjg0.png)
-##Installation and launch:
+# It's a simple ToDo application
+![](https://res.cloudinary.com/dv4fxot90/image/upload/v1600155605/img/Screenshot_2020-09-15_at_10.38.30_hybjg0.png)  
+## Installation and launch:
 Use npm package manager to install the project  
 `npm install`  
 Running the app in developer mode:  
 `npm start`  
-##Deploy:
+## Deploy:
 https://ex-todo-app.netlify.app/
-###Technologies used:
+### Technologies used:
 React, Bootstrap
 
 
